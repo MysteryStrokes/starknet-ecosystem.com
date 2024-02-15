@@ -1,0 +1,3 @@
+def check_airdrop_eligibility_variation1(user_activity, transaction_count):
+    two_months_ago = datetime.datetime.now() - datetime.timedelta(days=60)
+    return user_activity['last_activity'] >= two_months_ago and transaction_count == 5
